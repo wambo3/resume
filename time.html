@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe - Career Timeline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="#">John Doe</a>
+          </div>
+          <div class="nav-links">
+            <a href=index.html>About</a>
+            <a href=time.html>Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="theme-switch">
+            <input type="checkbox" id="theme-toggle" class="theme-toggle">
+            <label for="theme-toggle" class="theme-label">
+              <div class="theme-icon"></div>
+            </label>
+          </div>
+        </nav>
+      </header>
+
+  <main>
+    <section class="timeline">
+      <h2 data-aos="fade-up">Career Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-track">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Senior Software Engineer</h3>
+              <p class="company">Acme Corporation</p>
+              <p class="duration">2019 - Present</p>
+              <p>Led the development of a high-performance web application used by over 1 million users. Optimized application performance, resulting in a 30% reduction in server load. Mentored and trained junior developers in best practices and coding standards.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <p class="company">TechCorp Inc.</p>
+              <p class="duration">2016 - 2019</p>
+              <p>Developed and maintained a suite of internal tools and applications. Collaborated with cross-functional teams to gather requirements and deliver solutions. Implemented unit and integration testing to improve code quality.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Bachelor's Degree</h3>
+              <p class="company">University of California, Berkeley</p>
+              <p class="duration">2012 - 2016</p>
+              <p>Graduated with a Bachelor's degree in Computer Science.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Software Engineering Intern</h3>
+              <p class="company">TechGiant Corp.</p>
+              <p class="duration">Summer 2015</p>
+              <p>Worked on developing and maintaining internal web applications. Gained experience in agile development methodologies and collaborated with cross-functional teams.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="1000">
+            <div class="timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>High School Diploma</h3>
+              <p class="company">Bay Area High School</p>
+              <p class="duration">2008 - 2012</p>
+              <p>Graduated with honors and a focus on STEM subjects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 John Doe</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
