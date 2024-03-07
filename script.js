@@ -18,7 +18,18 @@ navLinksArray.forEach((link) => {
 // Dark mode toggle
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Function to set dark mode
+const setDarkMode = (isDark) => {
+    body.classList.toggle('dark-mode', isDark);
+    localStorage.setItem('darkMode', isDark);
+}
+
+// Initialize dark mode based on saved preference
+setDarkMode(isDarkMode);
 
 themeToggle.addEventListener('change', () => {
-  body.classList.toggle('dark-mode');
+    const darkModeEnabled = themeToggle.checked;
+    setDarkMode(darkModeEnabled);
 });
